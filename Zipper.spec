@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://xanthippe.dyndns.org/Zipper/%{name}-%{version}.tar.gz
 # Source0-md5:	657523f39f22914c5673886d4629ac68
+Patch0:		%{name}-initwitharguments.patch
 URL:		http://xanthippe.dyndns.org/Zipper/
 BuildRequires:	Renaissance-devel
 BuildRequires:	gnustep-gui-devel >= 0.9.1
@@ -50,6 +51,7 @@ dysk lokalny tylko w celu sprawdzenia co jest w ¶rodku.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 . %{_prefix}/System/Library/Makefiles/GNUstep.sh
