@@ -1,12 +1,12 @@
 Summary:	File archive viewer application for GNUstep
 Summary(pl):	Przegl±darka plików archiwów dla GNUstepa
 Name:		Zipper
-Version:	0.6
+Version:	0.8
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://xanthippe.dyndns.org/Zipper/%{name}-%{version}.tar.gz
-# Source0-md5:	6a385fd38e9e7a9c40efb259ff809482
+# Source0-md5:	0d252f8868111f8cfb0d47035fc70046
 URL:		http://xanthippe.dyndns.org/Zipper/
 BuildRequires:	Renaissance-devel
 BuildRequires:	gnustep-gui-devel >= 0.9.1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		gscpu		ix86
 %else
 # also s/alpha.*/alpha/, but we use only "alpha" arch for now
-%define		gscpu		%{_target_cpu}
+%define		gscpu		%(echo %{_target_cpu} | sed -e 's/amd64/x86_64/;s/ppc/powerpc/')
 %endif
 
 %description
