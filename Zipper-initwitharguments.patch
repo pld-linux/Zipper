@@ -1,0 +1,18 @@
+diff -ur o-Zipper/main.m Zipper/main.m
+--- o-Zipper/main.m	2004-11-09 12:44:19.000000000 -0700
++++ Zipper/main.m	2004-11-11 08:56:58.071170808 -0700
+@@ -3,9 +3,13 @@
+ #include <Renaissance/Renaissance.h>
+ #include "AppDelegate.h"
+ 
+-int main(int argc, const char *argv[]) 
++int main(int argc, const char *argv[], const char *env[]) 
+ {
+ 	CREATE_AUTORELEASE_POOL (pool);
++
++#ifdef GS_PASS_ARGUMENTS
++	[NSProcessInfo initializeWithArguments: argv count: argc environment: env];
++#endif
+ 	  
+ 	[NSApplication sharedApplication];
+  	[NSApp setDelegate: [AppDelegate new]];
