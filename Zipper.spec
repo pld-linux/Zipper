@@ -2,7 +2,7 @@ Summary:	File archive viewer application for GNUstep
 Summary(pl):	Przegl±darka plików archiwów dla GNUstepa
 Name:		Zipper
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://xanthippe.dyndns.org/Zipper/%{name}-%{version}.tar.gz
