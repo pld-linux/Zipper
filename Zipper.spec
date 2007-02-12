@@ -1,5 +1,5 @@
 Summary:	File archive viewer application for GNUstep
-Summary(pl):	Przegl±darka plików archiwów dla GNUstepa
+Summary(pl.UTF-8):   PrzeglÄ…darka plikÃ³w archiwÃ³w dla GNUstepa
 Name:		Zipper
 Version:	1.1
 Release:	1
@@ -37,17 +37,17 @@ currently tries to mimic. This has also the advantage that you don't
 have to unpack archives from networked volumes to your local disk just
 to view what's in it.
 
-%description -l pl
-Zipper to narzêdzie do ogl±dania zawarto¶ci i rozpakowywania
-skompresowanych archiwów.
+%description -l pl.UTF-8
+Zipper to narzÄ™dzie do oglÄ…dania zawartoÅ›ci i rozpakowywania
+skompresowanych archiwÃ³w.
 
-Autor jest ¶wiadom istnienia GNUstepowego portu s³ynnej aplikacji
-OpenUp, ale jako ¿e w pracy musi u¿ywaæ Windows, przyzwyczai³ siê do
-interfejsu Winzipa. Mimo ¿e nie lubi niektórych jego cech, podoba mu
-siê sposób wy¶wietlania zawarto¶ci archiwów bez potrzeby
-rozpakowywania ich. W³a¶nie to próbuje na¶ladowaæ Zipper. Ma tak¿e tê
-zaletê, ¿e nie trzeba rozpakowywaæ archiwów z woluminów sieciowych na
-dysk lokalny tylko w celu sprawdzenia co jest w ¶rodku.
+Autor jest Å›wiadom istnienia GNUstepowego portu sÅ‚ynnej aplikacji
+OpenUp, ale jako Å¼e w pracy musi uÅ¼ywaÄ‡ Windows, przyzwyczaiÅ‚ siÄ™ do
+interfejsu Winzipa. Mimo Å¼e nie lubi niektÃ³rych jego cech, podoba mu
+siÄ™ sposÃ³b wyÅ›wietlania zawartoÅ›ci archiwÃ³w bez potrzeby
+rozpakowywania ich. WÅ‚aÅ›nie to prÃ³buje naÅ›ladowaÄ‡ Zipper. Ma takÅ¼e tÄ™
+zaletÄ™, Å¼e nie trzeba rozpakowywaÄ‡ archiwÃ³w z woluminÃ³w sieciowych na
+dysk lokalny tylko w celu sprawdzenia co jest w Å›rodku.
 
 %prep
 %setup -q -n %{name}
