@@ -1,5 +1,5 @@
 Summary:	File archive viewer application for GNUstep
-Summary(pl.UTF-8):   Przeglądarka plików archiwów dla GNUstepa
+Summary(pl.UTF-8):	Przeglądarka plików archiwów dla GNUstepa
 Name:		Zipper
 Version:	1.1
 Release:	1
